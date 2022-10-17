@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        'use strict';
+        var student={
+            username:"tom",
+            _age:19,
+            get a(){
+                console.log('getter');
+                return this._age;
+            },
+            set a(value){
+                if(value<10 || value>100){
+                    throw new Error('年龄超出范围')
+                }else{
+                    this._age=value
+                }
+            }
+
+        };
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
